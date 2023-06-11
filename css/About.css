@@ -1,0 +1,72 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+}
+@font-face{
+    font-family: 'Poppins Bold';
+    src: url('../font/Poppins-Bold.ttf');
+}
+
+body{
+    background-image: url(../img/bg.svg);
+    background-size: 100% auto;
+    background-attachment: fixed;
+    color: white;
+    font-family: poppins;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+
+.navbar{
+    grid-column: 1/4;
+    margin: 50px auto;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.navbar .nav{
+    position: fixed;
+    margin-left: -220px;
+}
+.navbar a{
+    border: 0 solid;
+    background-color: rgba(9, 132, 227, 0.3);
+    color: white;
+    font-family: poppins bold;
+    font-size: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.logo{
+    grid-column: 1/2;
+    text-align: center;
+}
+.logo img{
+    margin-left: -30px;
+    position: fixed;
+}
+
+.about{
+    grid-column: 2/3;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    filter: drop-shadow(5px 5px 10px rgba(9, 132, 227, 0.4));
+}
+.about img{
+    margin: 70px 0 -10px 0;
+}
+.about h1{
+    font-family: poppins bold;
+    color: #00B894;
+}
+.about p{
+    color: #0984E3;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

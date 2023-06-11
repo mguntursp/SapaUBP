@@ -1,0 +1,70 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+}
+@font-face{
+    font-family: 'Poppins Bold';
+    src: url('../font/Poppins-Bold.ttf');
+}
+
+body{
+    background-image: url(../img/bg.svg);
+    background-size: 100% auto;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    font-family: poppins;
+}
+.teks{
+    width: 700px;
+    margin: 0 auto;
+}
+body h1{
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: Poppins Bold;
+}
+body form input{
+    padding: 17px 40px;
+    background-color: white;
+    border: 0px solid;
+    border-radius: 20px;
+    font-family: Poppins Bold;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px;
+    color: #0984E3;
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 10px rgba(9, 132, 227, 0.4));
+}
+body form input:hover{
+    background-color: #d8eeff;
+}
+
+.shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.shape svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 126px;
+}
+
+.shape .shape-fill {
+    fill: #FFFFFF;
+}
+
+body img{
+    position: relative;
+    width: 250px;
+    z-index: 1;
+}

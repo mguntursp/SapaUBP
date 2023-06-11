@@ -1,0 +1,152 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+}
+@font-face{
+    font-family: 'Poppins Bold';
+    src: url('../font/Poppins-Bold.ttf');
+}
+
+body{
+    background-image: url(../img/bg.svg);
+    background-size: 100% auto;
+    background-attachment: fixed;
+    color: white;
+    font-family: poppins;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+
+.navbar{
+    grid-column: 1/4;
+    margin: 50px auto;
+    margin-bottom: 80px;
+    text-align: center;
+    z-index: 10;
+}
+.navbar .nav{
+    position: fixed;
+    margin-left: -220px;
+}
+.navbar a{
+    border: 0 solid;
+    background-color: rgba(9, 132, 227, 0.3);
+    color: white;
+    font-family: poppins bold;
+    font-size: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.logo{
+    grid-column: 1/2;
+    text-align: center;
+}
+.logo img{
+    margin-left: -30px;
+    position: fixed;
+}
+
+.menfess{
+    grid-column: 2/3;
+    background-color: white;
+    border-radius: 50px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(10px 10px 10px rgba(9, 132, 227, 0.4));
+}
+.menfess .nama_menfess{
+    margin: 30px;
+}
+.menfess .nama_menfess div{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 100px;
+    padding-left: 40px;
+}
+.nama_menfess div p{
+    margin-top: 12px;
+}
+.from{
+    background-color: #00B894;
+}
+.for{
+    margin-left: 20px;
+    background-color: #0984E3;
+}
+.menfess .teks_menfess{
+    color: #0984E3;
+    text-align: center;
+    font-size: 30px;
+    width: 800px;
+    word-wrap: break-word;
+    margin: 0 auto;
+}
+.menfess .aksi_menfess{
+    margin: 0 30px;
+}
+.aksi_menfess .like{
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../img/btn-like.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    border: 0 solid;
+    cursor: pointer;
+}
+.aksi_menfess .comment{
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../img/btn-comment.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    border: 0 solid;
+    cursor: pointer;
+}
+.aksi_menfess .report{
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../img/btn-report.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    border: 0 solid;
+    cursor: pointer;
+}
+
+.create{
+    grid-column: 3/4;
+    text-align: center;
+}
+.create a{
+    margin: 400px 0 0 -30px;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border: 0 solid;
+    border-radius: 20px;
+    font-family: poppins bold;
+    font-weight: bolder;
+    font-size: 48px;
+    background-color: white;
+    color: #0984E3;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 10px rgba(9, 132, 227, 0.4));
+    text-decoration: none;
+}
+.create a:hover{
+    background-color: #91cdff;
+}
+.create a:active{
+    background-color: #0984E3;
+    color: white;
+}

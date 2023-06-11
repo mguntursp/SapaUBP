@@ -1,0 +1,86 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+}
+@font-face{
+    font-family: 'Poppins Bold';
+    src: url('../font/Poppins-Bold.ttf');
+}
+
+body{
+    background-image: url(../img/bg.svg);
+    background-size: 100% auto;
+    background-attachment: fixed;
+    color: white;
+    font-family: poppins;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+
+.navbar{
+    grid-column: 1/4;
+    margin: 50px auto;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.navbar .nav{
+    position: fixed;
+    margin-left: -220px;
+}
+.navbar a{
+    border: 0 solid;
+    background-color: rgba(9, 132, 227, 0.3);
+    color: white;
+    font-family: poppins bold;
+    font-size: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.logo{
+    grid-column: 1/2;
+    text-align: center;
+}
+.logo img{
+    margin-left: -30px;
+    position: fixed;
+}
+
+.change{
+    grid-column: 2/3;
+    text-align: center;
+    width: 500px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 0 auto;
+    color: #0984E3;
+}
+.change h1{
+    font-family: poppins bold;
+    margin: 40px;
+}
+.change form input{
+    width: 260px;
+    height: 50px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    font-family: poppins;
+    border: 0 solid;
+    background-color: rgba(116, 185, 255, 0.35);
+    padding: 0 20px;
+}
+.change form input:nth-child(2){
+    margin-bottom: 20px;
+}
+.change form input:nth-child(4){
+    padding: 0;
+    width: 200px;
+    background-color: #0984E3;
+    font-family: poppins bold;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}

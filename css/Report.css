@@ -1,0 +1,94 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+}
+@font-face{
+    font-family: 'Poppins Bold';
+    src: url('../font/Poppins-Bold.ttf');
+}
+
+body{
+    background-image: url(../img/bg.svg);
+    background-size: 100% auto;
+    background-attachment: fixed;
+    color: white;
+    font-family: poppins;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+
+.navbar{
+    grid-column: 1/4;
+    margin: 50px auto;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.navbar .nav{
+    position: fixed;
+    margin-left: -220px;
+}
+.navbar a{
+    border: 0 solid;
+    background-color: rgba(9, 132, 227, 0.3);
+    color: white;
+    font-family: poppins bold;
+    font-size: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.logo{
+    grid-column: 1/2;
+    text-align: center;
+}
+.logo img{
+    margin-left: -30px;
+    position: fixed;
+}
+
+.report{
+    grid-column: 2/3;
+    text-align: center;
+    width: 500px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+.report .judul h1{
+    color: #FF7979;
+    margin: 40px;
+    font-family: poppins bold;
+}
+.report .alasan label{
+    color: #FF7979;
+    display: block;
+    text-align: left;
+    margin: 0 0 5px 100px;
+}
+.report .alasan label:nth-child(5){
+    margin-bottom: 20px;
+}
+.report .alasan input[type="text"]{
+    width: 260px;
+    height: 50px;
+    background-color: rgba(255, 121, 121, 0.35);
+    border: 0 solid;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-family: poppins;
+}
+.report .alasan input[type="submit"]{
+    width: 200px;
+    height: 50px;
+    background-color: #FF7979;
+    color: white;
+    font-family: poppins bold;
+    font-size: larger;
+    border: 0 solid;
+    border-radius: 20px;
+    margin: 20px 0 50px 0;
+    cursor: pointer;
+}
